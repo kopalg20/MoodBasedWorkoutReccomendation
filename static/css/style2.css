@@ -1,0 +1,165 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #008080;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff2ea;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*h2 {
+    margin-top: 20px;
+    color: #333;
+}*/
+
+/* fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 21px; 
+    font-weight: bold;
+    color: #8823BE;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"]{
+    width: 300px;
+    height: 40px;
+    
+}
+
+input[type="text"]::placeholder {
+    margin-left: 1px;
+    font-size: 17px; /* Adjust the size as needed */
+    /* color: #888;     /* Optional: change color */
+/*}
+
+ button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}   */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('bg2.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cover to make the image cover the whole body */
+    color: #333;
+}
+
+.container {
+    max-width: 600px; /* Maximum width of the container */
+    margin: 50px auto; /* Center the container with margin */
+    background-color: rgba(242, 252, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 20px; /* Padding inside the container */
+    /* opacity: 0.8; */
+}
+.container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: 2rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Margin below the heading */
+    color: rgb(0, 92, 92); /* Specific color for the heading */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+fieldset {
+    border: 2px solid #52b8e0; /* Blue border around each question */
+    border-radius: 5px; /* Rounded corners for fieldsets */
+    padding: 15px; /* Padding inside fieldsets */
+    margin-bottom: 20px; /* Space between fieldsets */
+}
+
+legend {
+    font-weight: bold; /* Bold text for legends */
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 10px; /* Space between labels */
+    /* background-color: #f1f1f1; Light gray background */
+    padding: 10px; /* Padding inside labels */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    
+}
+
+label:hover {
+    background-color: #c0edff; /* Darker gray on hover */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Space to the right of radio buttons */
+}
+input[type="text"]{
+    border-color:#52b8e0;
+    border-radius: 10px;
+    height: 20px;
+    width: 300px;
+}
+button {
+    display: block; /* Make the button a block element */
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Padding inside the button */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color for button */
+    font-size: 1rem; /* Font size for button text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

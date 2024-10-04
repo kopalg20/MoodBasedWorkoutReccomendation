@@ -1,0 +1,524 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff2ea;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.logo {
+    height: 130px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-content::before {
+    content: "";
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8823be;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    /* background-color: #f7f7f7; */
+    /* background-image: url("image/img1.png");
+    background-size: cover; /* or 'contain' or specific sizes */
+    /* background-position: center; /* Optional: Center the image */
+    /* background-repeat: no-repeat; /* Optional: Prevent tiling */
+    /* height: 250px;
+    width:92.7vw; */
+
+}
+
+.hero::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/image/bg1.jpg");
+    /* Correct path */
+    background-size: cover;
+    /* or 'contain' */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    /* Sends the image behind the text */
+    opacity: 0.7;
+    /* Set desired opacity */
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    width: 600px;
+    border: 2px solid #e7effc;
+    /* box-shadow: 2px 2px 2px 2px #c9deff; */
+    height: 300px;
+    text-align: center;
+    background-color: #f7faff;
+    margin: 85px;
+    border-radius: 20px;
+}
+
+.hero-text h1 {
+    color: #098072;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hero-text p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+.btn {
+    background-color: #008080;
+    color: #dbf6f4;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #179696;
+}
+
+.working {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 80px;
+    display: block;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.working img {
+    margin: -100px;
+}
+
+#video {
+    position: relative;
+    background-color: #008080;
+    /* Blue background */
+    height: 90vh;
+    /* Full height box */
+    overflow: hidden;
+    margin: 150px 0px
+}
+
+.wave-svg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.wave-svg.bottom {
+    bottom: 0;
+}
+
+.content {
+    text-align: center;
+    color: #fff2ea;
+    padding: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+
+/* Search bar and button container */
+/* Container for the search elements */
+#youtube-search-form {
+    display: flex;
+    /* Aligns search bar and button horizontally */
+    justify-content: flex-end;
+    /* Aligns items to the right */
+    align-items: center;
+    /* Centers items vertically */
+    position: relative;
+    /* Allows positioning of the suggestion box */
+}
+
+/* Input and button styles */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    /* margin-left: 280px;
+    margin-right: ; */
+    margin: auto;
+}
+
+/* Search bar */
+input[type="text"] {
+    width: 60%;
+    /* Adjust width as necessary */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 5px; Space between search bar and button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff2ea;
+
+}
+
+/* Search button */
+
+
+
+
+
+/* Results container */
+#suggestion-box {
+    width: 100%;
+    /* Same width as the search bar */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    position: absolute;
+    /* To position it below the search bar */
+    z-index: 1000;
+    /* To ensure it appears on top */
+
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    width: 52%;
+    margin: auto;
+    color: #008080;
+
+}
+
+.suggestion-item:hover {
+    background-color: rgb(113, 167, 167);
+}
+
+/* .suggestions {
+    border: 1px solid #ccc;
+    background: #fff2ea;
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+} */
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#results div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: auto; */
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 72px;
+}
+
+#head {
+    margin-top: -150px;
+}
+
+#article {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Aligns items to the start */
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    margin-left: -80px;
+    margin-right: -80px;
+    margin-top: 10px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+    /* Smooth transition for transform */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    /* Start hidden below the card */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(6, 133, 133);
+    opacity: 0.6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: bottom 0.4s ease;
+    /* Transition for sliding up */
+}
+
+.overlay h3 {
+    margin: 10px 0;
+}
+
+.dumbbell-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    height: 30px;
+    width: 30px;
+}
+
+/* Show overlay on hover */
+.card:hover .overlay {
+    bottom: 0;
+    /* Slide overlay into view on card hover */
+}
+
+/* Alternate positions for even and odd cards */
+.card:nth-child(even) {
+    transform: translateY(100px);
+    /* Move even cards down */
+}
+
+.card:nth-child(odd) {
+    transform: translateY(-20px);
+    /* Move odd cards up */
+}
+
+footer {
+    background-color: #23272b;
+    /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    /* Separator line */
+    margin-top: 100px;
+    height: 500px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    /* Space between items */
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.icon-item i {
+    font-size: 24px;
+    /* Icon size */
+    margin-bottom: 10px;
+}
+
+.icon-item span {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer hr {
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .icon-container {
+        flex-direction: column;
+    }
+
+    .icon-item {
+        margin-bottom: 20px;
+    }
+}
+
+.feedback-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-container h3 {
+    margin-top: 72px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 310px;
+    width: 700px;
+    margin: auto;
+    border: 2px solid #fff2ea;
+    border-radius: 10px;
+}
+
+.feedback-form label {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+    background-color: #fff2ea;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #5d6871;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.feedback-form button:hover {
+    background-color: #7a8288;
+}
+
+@media (max-width: 768px) {
+    .feedback-container {
+        padding: 0 20px;
+    }
+}

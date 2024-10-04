@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmoFit</title>
+    <link rel="icon" href="image\icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image\logo-removebg-preview.png" alt="Emofit logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#work">How it works</a></li>
+                    <li><a href="#video">Video Description</a></li>
+                    <li><a href="#article">Articles</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Move. Meditate. Thrive.</h1>
+            <p>
+                Refresh your mind and body with a personalized mix of<br>fitness,yoga, and meditation designed for you.
+            </p>
+            <a href="http://127.0.0.1:5000" class="btn" id="getClassbtn">Get Started</a>
+        </div>
+        <!-- <div class="hero-image">
+            <img src="image\img1.png" alt="Therapy session">
+        </div> -->
+    </section>
+    <section class="working" id="work">
+        <h2>How It Works</h2>
+        <img src="image\working-removebg-preview.png" alt="Reload">
+    </section>
+    <section id="video">
+        <div class="content">
+            <h2>Video Description</h2>
+            <form id="youtube-search-form">
+                <input type="text" id="search-query" placeholder="Search YouTube videos..." autocomplete="off">
+
+            </form>
+            <div id="suggestions" class="suggestions"></div>
+            <!-- Results Container -->
+            <div id="results"></div>
+
+            <!-- JavaScript -->
+            <script src="script.js"></script>
+        </div>
+        <!-- Bottom Wave -->
+        <svg class="wave-svg bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff2ea" fill-opacity="1"
+                d="M0,224L40,202.7C80,181,160,139,240,144C320,149,400,203,480,213.3C560,224,640,192,720,181.3C800,171,880,181,960,192C1040,203,1120,213,1200,224C1280,235,1360,245,1400,250.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <h2 id="head">Articles</h2>
+    <section id="article">
+        <div class="card">
+            <img src="image/a1.jpg" alt="Fitness Class 1">
+            <div class="dumbbell-icon">
+                <img src="image\dumbell-removebg-preview.png" alt="">
+            </div>
+            <div class="overlay">
+                <a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">
+                    <p>Benefits of Exercise</p>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/a2.jpg" alt="Fitness Class 1">
+            <div class="dumbbell-icon">
+                <img src="image\dumbell-removebg-preview.png" alt="">
+            </div>
+            <div class="overlay">
+                <a href="https://www.healthline.com/nutrition/12-benefits-of-meditation">
+                    <p>Benefits of Meditation</p>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/a3.jpg" alt="Fitness Class 1">
+            <div class="dumbbell-icon">
+                <img src="image\dumbell-removebg-preview.png" alt="">
+            </div>
+            <div class="overlay">
+                <a href="https://www.verywellfit.com/top-health-benefits-of-yoga-3566733">
+                    <p>Benefits of Yoga</p>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/a4.jpg" alt="Fitness Class 1">
+            <div class="dumbbell-icon">
+                <img src="image\dumbell-removebg-preview.png" alt="">
+            </div>
+            <div class="overlay">
+                <a href="https://www.verywellfit.com/why-you-need-nutrition-and-fitness-3121363">
+                    <p>Healthy Diet</p>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/a5.jpg" alt="Fitness Class 1">
+            <div class="dumbbell-icon">
+                <img src="image\dumbell-removebg-preview.png" alt="">
+            </div>
+            <div class="overlay">
+                <a href="https://www.everydayhealth.com/fitness/guide/">
+                    <p>Why to remain fit ?</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-icons" id="footer">
+        <div class="icon-container">
+            <div class="icon-item">
+                <i class="material-icons">call</i>
+                <span>Give Us a Call</span>
+            </div>
+            <div class="icon-item">
+                <i class="material-icons">directions</i>
+                <span>Get Directions</span>
+            </div>
+            <div class="icon-item">
+                <i class="material-icons">email</i>
+                <span>Send Us a Message</span>
+            </div>
+        </div>
+        <div class="feedback-container"></div>
+        <h3>Give Us Your Feedback</h3>
+        <form action="#" method="post" class="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </footer>
+</body>
+
+</html>

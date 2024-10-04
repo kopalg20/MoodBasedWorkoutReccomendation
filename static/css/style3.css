@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Set background image */
+    background-size: cover;
+    /* Cover entire page */
+    background-position: center;
+    /* Center the background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Full viewport height */
+
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url("bgr2.jpg") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    /* White background for container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+    /* Start hidden */
+    transform: scale(0.9);
+    /* Start slightly smaller */
+    animation: pop-in 0.8s ease forwards;
+    /* Apply pop-in effect */
+    position: relative;
+    /* Position relative for stacking */
+    z-index: 1;
+    /* On top of the background */
+    height: 350px;
+
+}
+
+.container:hover {
+    box-shadow: 0 8px 40px rgba(0, 128, 128, 0.5);
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        /* Start fully transparent */
+        transform: scale(0.9);
+        /* Start slightly smaller */
+    }
+
+    50% {
+        opacity: 1;
+        /* Fully visible */
+        transform: scale(1.05);
+        /* Slightly larger for pop effect */
+    }
+
+    100% {
+        opacity: 1;
+        /* Fully visible */
+        transform: scale(1);
+        /* Original size */
+    }
+}
+
+h1 {
+    text-align: center;
+    color: teal;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2 {
+    color: #333;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid teal;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: rgb(18, 199, 199);
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="..\static\css\style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health & Emotional Check-in Questionnaire</h1>
+        <form action="#" method="post" id="questionnaireForm">
+
+            <!-- Q1: Your Age -->
+            <fieldset>
+                <legend>Q1. Your age?</legend>
+                <label><input type="radio" name="age" value="15-24" required> 15-24</label><br>
+                <label><input type="radio" name="age" value="25-34"> 25-34</label><br>
+                <label><input type="radio" name="age" value="35-44"> 35-44</label><br>
+                <label><input type="radio" name="age" value="45-54"> 45-54</label><br>
+                <label><input type="radio" name="age" value="65+"> 65+</label>
+            </fieldset>
+
+            <!-- Q2: Gender -->
+            <fieldset>
+                <legend>Q2. Select gender</legend>
+                <label><input type="radio" name="gender" value="female" required> Female</label><br>
+                <label><input type="radio" name="gender" value="male"> Male</label><br>
+                <label><input type="radio" name="gender" value="others"> Others</label>
+            </fieldset>
+
+            <!-- Q3: Fitness Level -->
+            <fieldset>
+                <legend>Q3. Fitness level</legend>
+                <label><input type="radio" name="fitness" value="beginner" required> Beginner</label><br>
+                <label><input type="radio" name="fitness" value="intermediate"> Intermediate</label><br>
+                <label><input type="radio" name="fitness" value="advanced"> Advanced</label>
+            </fieldset>
+
+            <!-- Q4: Mood -->
+            <fieldset>
+                <legend>Q4. How would you describe your overall mood today?</legend>
+                <label><input type="radio" name="mood" value="Very Happy" required> Very Happy</label><br>
+                <label><input type="radio" name="mood" value="Happy"> Happy</label><br>
+                <label><input type="radio" name="mood" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="mood" value="Sad"> Sad</label><br>
+                <label><input type="radio" name="mood" value="Very Sad"> Very Sad</label>
+            </fieldset>
+
+            <!-- Q5: Motivation -->
+            <fieldset>
+                <legend>Q5. How motivated do you feel to accomplish tasks today?</legend>
+                <label><input type="radio" name="motivation" value="Very motivated" required> Very motivated</label><br>
+                <label><input type="radio" name="motivation" value="Somewhat motivated"> Somewhat motivated</label><br>
+                <label><input type="radio" name="motivation" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="motivation" value="Somewhat unmotivated"> Somewhat unmotivated</label><br>
+                <label><input type="radio" name="motivation" value="Very unmotivated"> Very unmotivated</label>
+            </fieldset>
+
+            <!-- Q6: Connectedness -->
+            <fieldset>
+                <legend>Q6. How connected do you feel to others today?</legend>
+                <label><input type="radio" name="connectedness" value="Very connected" required> Very connected</label><br>
+                <label><input type="radio" name="connectedness" value="Somewhat connected"> Somewhat connected</label><br>
+                <label><input type="radio" name="connectedness" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="connectedness" value="Somewhat disconnected"> Somewhat disconnected</label><br>
+                <label><input type="radio" name="connectedness" value="Very disconnected"> Very disconnected</label>
+            </fieldset>
+
+            <!-- Q7: Energy Level -->
+            <fieldset>
+                <legend>Q7. How would you rate your energy level right now?</legend>
+                <label><input type="radio" name="energy" value="High"> High</label><br>
+                <label><input type="radio" name="energy" value="Moderate"> Moderate</label><br>
+                <label><input type="radio" name="energy" value="Low"> Low</label><br>
+            </fieldset>
+
+            <!-- Q8: Sleep Quality -->
+            <fieldset>
+                <legend>Q8. How well did you sleep last night?</legend>
+                <label><input type="radio" name="sleep" value="Very well" required> Very well</label><br>
+                <label><input type="radio" name="sleep" value="Well"> Well</label><br>
+                <label><input type="radio" name="sleep" value="Fair"> Fair</label><br>
+                <label><input type="radio" name="sleep" value="Poorly"> Poorly</label><br>
+                <label><input type="radio" name="sleep" value="Very poorly"> Very poorly</label>
+            </fieldset>
+
+            <!-- Q9: Interest -->
+            <fieldset>
+                <legend>Q9. Are you more interested in physical fitness or mental relaxation today?</legend>
+                <input type="text" name="interest" placeholder="Physical or Mental ?" required>
+            </fieldset>
+
+            <!-- Q10: Time Investment -->
+            <fieldset>
+                <legend>Q10. How much time can you invest right now?</legend>
+                <label><input type="radio" name="time" value="15 min" required> 15 min</label><br>
+                <label><input type="radio" name="time" value="30 min"> 30 min</label><br>
+                <label><input type="radio" name="time" value="1 hour"> 1 hour</label><br>
+                <label><input type="radio" name="time" value="2 hour"> 2 hour</label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
