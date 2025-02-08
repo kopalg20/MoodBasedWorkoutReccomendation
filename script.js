@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyAo5R3FhcE2wY8CgQmrRZd7yxM9ipKntJo'; // Replace with your YouTube API key
+const apiKey = 'AIzaSyAo5R3FhcE2wY8CgQmrRZd7yxM9ipKntJo';
 
 // List of predefined search options
 const searchOptions = [
@@ -15,7 +15,6 @@ const searchOptions = [
 
 ];
 
-// Capture the search input and suggestions
 const searchInput = document.getElementById('search-query');
 const suggestionsContainer = document.getElementById('suggestions');
 
@@ -31,25 +30,23 @@ searchInput.addEventListener('input', function() {
             suggestionItem.textContent = option;
             suggestionItem.className = 'suggestion-item';
             suggestionItem.addEventListener('click', () => {
-                searchInput.value = option; // Fill the input with the clicked suggestion
-                suggestionsContainer.innerHTML = ''; // Clear suggestions
-                searchYouTube(option); // Initiate search
+                searchInput.value = option;
+                suggestionsContainer.innerHTML = '';
+                searchYouTube(option);
             });
             suggestionsContainer.appendChild(suggestionItem);
         });
     }
 });
 
-// Handle search form submission
 document.getElementById('youtube-search-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
     const query = searchInput.value;
     if (query) {
         searchYouTube(query);
     }
 });
 
-// Search YouTube
 function searchYouTube(query) {
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&type=video&q=${encodeURIComponent(query)}&key=${apiKey}`;
 
@@ -61,13 +58,11 @@ function searchYouTube(query) {
         .catch(error => console.error('Error:', error));
 }
 
-// Display video results
 function displayResults(videos) {
     const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous results
+    resultsDiv.innerHTML = '';
 
     videos.forEach(video => {
-        // Skip non-video results
         if (!video.id.videoId) return;
         
         const videoElement = `

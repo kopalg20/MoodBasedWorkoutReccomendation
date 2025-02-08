@@ -1,24 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
-    /* Set background image */
     background-size: cover;
-    /* Cover entire page */
     background-position: center;
-    /* Center the background */
     color: #333;
     margin: 0;
     padding: 20px;
     overflow: hidden;
     display: flex;
-    /* Use flexbox for centering */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     height: 100vh;
-    /* Full viewport height */
-
-
 }
 
 body::before {
@@ -39,20 +30,14 @@ body::before {
     width: 600px;
     margin: 0 auto;
     background-color: #fff;
-    /* White background for container */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     opacity: 0.7;
-    /* Start hidden */
     transform: scale(0.9);
-    /* Start slightly smaller */
     animation: pop-in 0.8s ease forwards;
-    /* Apply pop-in effect */
     position: relative;
-    /* Position relative for stacking */
     z-index: 1;
-    /* On top of the background */
     height: 350px;
 
 }
@@ -64,23 +49,17 @@ body::before {
 @keyframes pop-in {
     0% {
         opacity: 0;
-        /* Start fully transparent */
         transform: scale(0.9);
-        /* Start slightly smaller */
     }
 
     50% {
         opacity: 1;
-        /* Fully visible */
         transform: scale(1.05);
-        /* Slightly larger for pop effect */
     }
 
     100% {
         opacity: 1;
-        /* Fully visible */
         transform: scale(1);
-        /* Original size */
     }
 }
 
@@ -126,5 +105,4 @@ p {
 .back-btn:hover {
     background-color: rgb(18, 199, 199);
     transform: translateY(-5px);
-    /* Slight lift effect on hover */
 }

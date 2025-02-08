@@ -64,13 +64,6 @@ nav ul li a {
     justify-content: center;
     padding: 50px;
     align-items: center;
-    /* background-color: #f7f7f7; */
-    /* background-image: url("image/img1.png");
-    background-size: cover; /* or 'contain' or specific sizes */
-    /* background-position: center; /* Optional: Center the image */
-    /* background-repeat: no-repeat; /* Optional: Prevent tiling */
-    /* height: 250px;
-    width:92.7vw; */
 
 }
 
@@ -82,15 +75,11 @@ nav ul li a {
     right: 0;
     bottom: 0;
     background-image: url("/image/bg1.jpg");
-    /* Correct path */
     background-size: cover;
-    /* or 'contain' */
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    /* Sends the image behind the text */
     opacity: 0.7;
-    /* Set desired opacity */
     height: 100%;
     width: 100%;
 }
@@ -98,7 +87,6 @@ nav ul li a {
 .hero-text {
     width: 600px;
     border: 2px solid #e7effc;
-    /* box-shadow: 2px 2px 2px 2px #c9deff; */
     height: 300px;
     text-align: center;
     background-color: #f7faff;
@@ -159,9 +147,7 @@ h2 {
 #video {
     position: relative;
     background-color: #008080;
-    /* Blue background */
     height: 90vh;
-    /* Full height box */
     overflow: hidden;
     margin: 150px 0px
 }
@@ -184,60 +170,38 @@ h2 {
     position: relative;
 }
 
-
-/* Search bar and button container */
-/* Container for the search elements */
 #youtube-search-form {
     display: flex;
-    /* Aligns search bar and button horizontally */
     justify-content: flex-end;
-    /* Aligns items to the right */
     align-items: center;
-    /* Centers items vertically */
     position: relative;
-    /* Allows positioning of the suggestion box */
 }
 
-/* Input and button styles */
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
-    /* margin-left: 280px;
-    margin-right: ; */
     margin: auto;
 }
 
-/* Search bar */
 input[type="text"] {
     width: 60%;
-    /* Adjust width as necessary */
     border: 2px solid #ccc;
     border-radius: 5px;
-    /* margin-right: 5px; Space between search bar and button */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff2ea;
 
 }
 
-/* Search button */
 
-
-
-
-
-/* Results container */
 #suggestion-box {
     width: 100%;
-    /* Same width as the search bar */
     padding: 10px;
     font-size: 16px;
     border: 1px solid black;
     border-radius: 4px;
     background-color: white;
     position: absolute;
-    /* To position it below the search bar */
     z-index: 1000;
-    /* To ensure it appears on top */
 
 }
 
@@ -255,25 +219,6 @@ input[type="text"] {
     background-color: rgb(113, 167, 167);
 }
 
-/* .suggestions {
-    border: 1px solid #ccc;
-    background: #fff2ea;
-    position: absolute;
-    z-index: 1000;
-    width: 300px;
-    max-height: 150px;
-    overflow-y: auto;
-}
-
-.suggestion-item {
-    padding: 10px;
-    cursor: pointer;
-    color: black;
-}
-
-.suggestion-item:hover {
-    background-color: #f0f0f0;
-} */
 
 #results {
     display: grid;
@@ -290,7 +235,6 @@ input[type="text"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: auto; */
 }
 
 iframe {
@@ -332,7 +276,6 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s ease;
-    /* Smooth transition for transform */
 }
 
 .card img {
@@ -351,7 +294,6 @@ h3 {
 .overlay {
     position: absolute;
     bottom: -100%;
-    /* Start hidden below the card */
     left: 0;
     width: 100%;
     height: 100%;
@@ -364,7 +306,6 @@ h3 {
     align-items: center;
     text-align: center;
     transition: bottom 0.4s ease;
-    /* Transition for sliding up */
 }
 
 .overlay h3 {
@@ -386,31 +327,24 @@ h3 {
     width: 30px;
 }
 
-/* Show overlay on hover */
 .card:hover .overlay {
     bottom: 0;
-    /* Slide overlay into view on card hover */
 }
 
-/* Alternate positions for even and odd cards */
 .card:nth-child(even) {
     transform: translateY(100px);
-    /* Move even cards down */
 }
 
 .card:nth-child(odd) {
     transform: translateY(-20px);
-    /* Move odd cards up */
 }
 
 footer {
     background-color: #23272b;
-    /* Dark background */
     color: white;
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #aaa;
-    /* Separator line */
     margin-top: 100px;
     height: 500px;
 }
@@ -419,7 +353,6 @@ footer {
     display: flex;
     justify-content: center;
     gap: 300px;
-    /* Space between items */
 }
 
 .icon-item {
@@ -431,7 +364,6 @@ footer {
 
 .icon-item i {
     font-size: 24px;
-    /* Icon size */
     margin-bottom: 10px;
 }
 
