@@ -5,16 +5,18 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report
 import mysql.connector
+import os
 
 # Connect to MySQL and fetch user data
 def fetch_user_data():
     db_connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Kopal2005@",
-        database="questionnaire_database"
+        host="database-2.cxkcwa4myn21.eu-north-1.rds.amazonaws.com",
+        user="admin",
+        password="Kopal2005#",
+        database="EmofitData",
+        port=3306
     )
-    query = "SELECT age,gender,fitness_level,mood,motivation,connectedness,energy,time FROM Table1"  # Replace 'user_table' with your actual table name
+    query = "SELECT age,gender,fitness_level,mood,motivation,connectedness,energy,time FROM table1"  # Replace 'user_table' with your actual table name
     cursor = db_connection.cursor(dictionary=True)
     cursor.execute(query)
     result = cursor.fetchall()
